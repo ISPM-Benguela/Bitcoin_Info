@@ -1,4 +1,4 @@
-# Bitcoin_Info
+# Bitcoin Info
 Este é um codigo que avisa sobre os preços baixos do bitcoin.
 
 # O que o codigo faz?
