@@ -4,6 +4,7 @@ import urllib3
 
 import telepot
 from decouple import config
+from nltk.chat.eliza imort eliza_chatbot
 
 # Podes abandonar estas linhas de codigo caso nao estaras
 # Usando pythonanywhere free account
@@ -23,11 +24,13 @@ def handle(msg):
     print(content_type, chat_type, chat_id)
 
     if content_type == 'text':
-        bot.sendMessage(chat_id, "You said '{}' ".format(msg['text']))
-
+        return
+    elif msg['text'].startswith('/ajuda')
+            bot.setMessage(chat_id, 'Ola eu sou a filha da Eliza Bot vou te ensisar Igles Diz qualquer coisa em Ingles')
+    else:
+        bot.sendMessage(chat_id, eliza_chatbot.response(msg['text']))
 bot.message_loop(handle)
 
 print('Listing...')
 while 1:
     time.sleep(10)
-
