@@ -25,8 +25,8 @@ def handle(msg):
 
     if content_type == 'text':
         return
-    elif msg['text'].startswith('/ajuda')
-            bot.setMessage(chat_id, 'Ola eu sou a filha da Eliza Bot vou te ensisar Igles Diz qualquer coisa em Ingles')
+    elif msg['text'].startswith('/ajuda'):
+        bot.setMessage(chat_id, 'Ola eu sou a filha da Eliza Bot vou te ensisar Igles Diz qualquer coisa em Ingles')
     else:
         bot.sendMessage(chat_id, eliza_chatbot.response(msg['text']))
 bot.message_loop(handle)
