@@ -4,7 +4,7 @@ import urllib3
 
 import telepot
 from decouple import config
-from nltk.chat.eliza imort eliza_chatbot
+from nltk.chat.eliza import eliza_chatbot
 
 # Podes abandonar estas linhas de codigo caso nao estaras
 # Usando pythonanywhere free account
